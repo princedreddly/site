@@ -1,0 +1,70 @@
+<% include partials/header.ejs %>
+
+
+
+<!--stylesheets-->
+<link rel="stylesheet" href="/stylesheets/games-table.css">
+
+
+
+
+
+
+<main>
+
+    <h2>Search Games</h2>
+
+    <div class="table-search">
+        <input type="text" id="myInput" onkeyup="tableSearch()" placeholder="Search for games.." title="Type in a game">
+    </div>
+
+    <div class="container">
+
+
+        <div id="games-table">
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Name</th>
+                            <th onclick="sortTable(1)">Platform</th>
+                            <th onclick="sortTable(2)">Genre</th>
+                            <th onclick="sortTableDate(3)">release date</th>
+                            <th onclick="sortTable(4)">publisher</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table id="tbt" cellpadding="0" cellspacing="0" border="0">
+                    <tbody id="games-table-data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="my-games">
+
+        <h2>My Games</h2>
+
+        <ul>
+            <li>Scrutiny</li>
+        </ul>
+
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+<!--scripts-->
+<script src="/javascript/games.js"></script>
+
+<% include partials/footer.ejs %>

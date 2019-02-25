@@ -1,0 +1,26 @@
+<% include ../partials/header.ejs %>
+
+<form method="POST" action="/games/postGame" id="postgame-form">
+    <label for="game-name">name</label>
+    <input type="text" name="game-name" value="">
+    <label for="game-platform">platform</label>
+    <input type="text" name="game-platform" value="">
+    <label for="game-genre">genre</label>
+    <input type="text" name="game-genre" value="">
+    <label for="game-tags">tags</label>
+    <input type="text" name="game-tags" value="">
+    <label for="game-releasedate">date</label>
+    <input type="text" name="game-releasedate" value="">
+    <label for="game-releasedatesort">date2</label>
+    <input type="text" name="game-releasedatesort" value="">
+    <label for="game-url">url</label>
+    <input type="text" name="game-url" value="">
+    <label for="game-publisher">publisher</label>
+    <input type="text" name="game-publisher" value="">
+
+    <input type="submit" value="submit"> </input>
+</form>
+
+<% include ../partials/footer.ejs %>
+
+
