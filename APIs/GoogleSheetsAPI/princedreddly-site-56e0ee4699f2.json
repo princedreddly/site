@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "princedreddly-site",
+  "private_key_id": "56e0ee4699f2c25f8f4fa616e2f15e1e13619f6d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqCUIgsfntVAf/\n8YD+JRelWzg+4xTXHb0FS0pn54IDLfSwk+uFovqEgxwYinteaa0BKVTpm1N1GLwM\ntZI4vDr5K9rpAs7qgnOhyF2JyA3NgqyMkl7MP1WVJ9+eOhvsOk4zHs+btyWFO9NK\n0jDSF/2hdKC6TP4/I4i7+0PNcd3HAwGDGVr+p/cr8teOzYswnY+HmY6APjOS4GlZ\nEUHS2K1aN/PifiLTWkc9y0LkRWxC+DWiHDL89JAe4owK3ZPd/SSjVnXTzLLbplVb\nZUkIo91xS8d7a1OZhb4ldvLoI68wa1uEPYOkzGh8MOx1S/XsZeYor/9f483llnKf\np4S7oyO7AgMBAAECggEAPLV3hcLlsAWroYcxfgvySFisWU+sdi2o+kXqd/ShZ881\nqQH3Okx5U2yYUG7JI2lpmpuONKX/gzRkl8kQPu99ws8UptMY24PeEyo9s17ZBsIc\nJ0hvTk9imBGXdp/arloW54udpkQawloc037+bVShes7wP/QTZqmiPTO1/pkkDNSB\nRHLYULDFceOms9mhW1FQyeI2AajhzBIRxPbl3XR1BDe2JlIObNpsjcUCRThuOUM/\n30piKetHgMynZRi4WX6tXQNSOkd79t377wjFGnLhoa9+coDOdUoMgtOF5HmM9Mkr\n4hg6jYk1auniisZebMTapa4M3t2S7i3+Vf3OgLJrIQKBgQDlUaYojZ3OFctRK2ir\n3rggVrK6RGdNlOsJsNlkjXjnA75ArG6aGs1eXFTuojBP3wFBKuLTGzt1QM61M3oJ\nsQ3XkZKyFkinXv6GwLLn1YV0bb4fqQGmg/4PcyOwOIlu/PpKOUBZheNJvxyi1Tfi\neIFCMzkFINvz+i7CknzvhbhMMQKBgQC90dl2NoRrr5iGOsdbksRQ3IQ7s2ZkDPLZ\nHqSxVyj6mAYTSqB3rSblDKOGQ+muwfjvCINUCmgNVUNaL7u0mdk5cf227BffQtLn\nhuAnYEKRcbwyEV+W2gd+PeqdyeYkKtdHU2l4Quhuav0DCj9SeCKSJELcekfB++/q\nNkeaW69vqwKBgEepPENv/eBo7yBucEdFUkTI0xFiTuXvo4NjwIurqhyHDu0m9Wky\n9vqF4ASyqmZLShkTTc6qs+nwVqhJbdmZerniw/TjAdFL3j49+ap5DztTEBbUua9P\nkBVD5eMrx8bnR0/qlDFlpaFmF4zLFKuw/LOzTh5MJnAXvoUPQfuXzgABAoGBAIzx\ngnzqIg0rhx80Cc8O/UHlWzJRFRf5HWDmBfe/9ieMNgahBOGX6ids6QbK6nregI5M\nTedbCsPLqYUPqFqDWe3znCX0zAz0u1E6rrnOGd+RCeJLUCTco2+zXb/nqED2pn7J\niqjHVXqXamKVe0sq9NB6qEK5cQqynQPVZflRVsSdAoGAVGO8kAhn7buWn53Zrgoc\nEy1P2rPm1p5i3xbdCPvAd2IoSlXiAk62Z/cfoeRn1+WU7ld83IAyxptsUENbd3wl\ndktLZmbbUCQjqCudjECMO6jRmXwrmEpZhkVtBo/mx/UNlADnz1cnkh0GpBYxGSO3\nnU5QNKBuhdUhi0K9YHHMjrM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gsapi-296@princedreddly-site.iam.gserviceaccount.com",
+  "client_id": "111131580866531704853",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gsapi-296%40princedreddly-site.iam.gserviceaccount.com"
+}
