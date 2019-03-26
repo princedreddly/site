@@ -16,38 +16,6 @@ const json2csv = require('json-2-csv');
 //Vars
 let sPort = process.env.PORT || 80; //server port
 
-live = !true; // disable ngrok if using nodemon
-
-// Use ngrok to host server
-if (live) {
-    (async function () {
-        const url = await ngrok.connect();
-        date = new Date().toLocaleTimeString();
-
-        var twirlTimer = (function () {
-            var P = [".  ", ".. ", "...", "   "];
-            var x = 0;
-            return setInterval(function () {
-                process.stdout.write("\r" + 'Server running ' + P[x++] + '          ');
-                x &= 3;
-            }, 1000);
-        })();
-        // var twirlTimer = (function () {
-        //     var P = ["\\", "|", "/", "-"];
-        //     var x = 0;
-        //     return setInterval(function () {
-        //         process.stdout.write("\r" + 'Server running ' + P[x++] + '          ');
-        //         x &= 3;
-        //     }, 100);
-        // })();
-
-
-        ////console.log('\n\nServer started at ' + date);
-        console.log("\ninspect \t =>\t\t>>> http://localhost:4040/ <<<\n");
-        console.log("server    \t =>\t\t>>> " + url + "/ <<<\n\n\n");
-
-    })();
-}
 
 
 // Start Server
