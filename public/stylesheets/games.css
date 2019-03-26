@@ -2,8 +2,8 @@
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 8px 90vh;
-      grid-template-rows: 8px 90vh;
+  -ms-grid-rows: 8px;
+      grid-template-rows: 8px;
 }
 
 .table-search {
@@ -98,5 +98,20 @@ tr {
 ul {
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
+}
+
+/* for custom scrollbar for webkit browser*/
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=games.css.map */
