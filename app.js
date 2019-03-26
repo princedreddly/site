@@ -1,12 +1,11 @@
 const express = require("express");
-let app = express();
-const jquery = require('jquery');
+const app = express();
+//const jquery = require('jquery');
 const bodyParser = require('body-parser');
-const urlencodedParser = bodyParser.urlencoded({
-    extended: false
-});
+const urlencodedParser = bodyParser.urlencoded({extended: false});
 const ngrok = require('ngrok');
 const json2csv = require('json-2-csv');
+const router = require('./routes.js');
 
 
 
@@ -15,7 +14,6 @@ const json2csv = require('json-2-csv');
 
 //Vars
 let sPort = process.env.PORT || 80; //server port
-
 
 
 // Start Server
@@ -29,16 +27,15 @@ app.listen(sPort, () => {
 //!SECTION 
 
 
-
-//static files
 app.use(express.static("public"));
+app.use(router)
 
 
-//default extentions
+//engines
 app.set('view engine', 'ejs');
 app.set('css engine', 'scss');
 
-
+/////////////////////////////////////////////////////////////
 
 /* Routes *\
 \*        */
@@ -57,25 +54,7 @@ app.get('/idb', (req, res) => {
 app.post('/', (req, res) => {
 
 });
-/* Routes *\
-\*  games */
-//games
-app.get('/games', (req, res) => {
-    res.render("games");
-});
 
-app.get('/games/:gamePage', (req, res) => {
-    const gamepage = req.params.gamePage;
-    res.render("games/" + gamepage);
-});
-
-app.use('/games/*', (error, req, res, next) => {
-    res.status(500);
-    res.render('games/gameNotListed', {
-        title: '500: Internal Server Error',
-        error: error
-    });
-});
 
 /* Routes *\
 \*  media */
@@ -107,3 +86,10 @@ app.get('*', (req, res) => {
 });
 
 /////////////////////////////////////////
+
+
+
+
+
+
+
