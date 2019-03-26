@@ -3,23 +3,6 @@ const app = express();
 var jquery = require('jquery');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-const ngrok = require('ngrok');
-
-live = false // disable if using nodemon
-
-// Use ngrok
-if (live) {    
-    (async function() {
-        const url = await ngrok.connect();
-        date = new Date();
-        
-        console.clear();
-        console.log('Server started at ' + date.toUTCString());
-        console.log("http://localhost:4040/inspect/\n");
-        console.log("Click link to go to server =>      " + url + "/");
-        
-    })();
-}
 
 
 
@@ -92,7 +75,10 @@ app.get('/me', (req, res) => {
     res.render("me");
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 66522f11b5a4b6ed1bcf7b62415374cbf751dfad
 /* Routes *\
 \* ERRORS */
 //ERROR_404
@@ -102,12 +88,30 @@ app.get('*', (req, res) => {
 
 /////////////////////////////////////////
 
+<<<<<<< HEAD
 
+=======
+jo = {
+    "name": "Anthem",
+    "platform": ["platform"],
+    "genre": ["RPG"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "February 22, 2019",
+    "releasedatesort": "2019-02-22",
+    "url": "/games/anthem",
+    "publisher": "Electronic Arts"
+}
+>>>>>>> 66522f11b5a4b6ed1bcf7b62415374cbf751dfad
 
 /* Start Server on port 80 *\
 \*                         */
 app.listen(80, () => {
+<<<<<<< HEAD
     date = new Date();
     return console.log('Server ready at ' + date);
+=======
+    date = new Date(jo.releasedate).toDateString();
+    return console.log('Server started at ' + date);
+>>>>>>> 66522f11b5a4b6ed1bcf7b62415374cbf751dfad
     
 });
