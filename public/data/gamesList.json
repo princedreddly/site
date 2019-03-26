@@ -1,0 +1,172 @@
+[{
+    "name": "Anthem",
+    "platform": ["platform"],
+    "genre": ["RPG"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "February 22, 2019",
+    "releasedatesort": "2019-02-22",
+    "url": "/games/anthem",
+    "publisher": "Electronic Arts"
+}, {
+    "name": "Apex Legends",
+    "platform": ["platform"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "date",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/apexLegends",
+    "publisher": "Electronic Arts"
+}, {
+    "name": "Call of Duty: Black Ops 4",
+    "platform": ["PlayStation 4", "XboxOne", "Windows"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "October 12, 2018",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/codbo4",
+    "publisher": "Activision"
+}, {
+    "name": "Counter-Strike: Global Offensive",
+    "platform": ["Microsoft Windows", "Mac OS clàssic", "Linux", "PlayStation 3", "Xbox 360"],
+    "genre": ["FPS"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "August 21, 2012",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/csgo",
+    "publisher": ["Valve Corporation", "Perfect World Games"]
+}, {
+    "name": "Escape from Tarkov",
+    "platform": ["PC"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "date",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/escapeFromTarkov",
+    "publisher": "Battlestate Games"
+}, {
+    "name": "FIFA 19",
+    "platform": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PlayStation 3", "Xbox 360", "Microsoft Windows"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "September 28, 2018",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/fifa19",
+    "publisher": ["Electronic Arts", "EA Sports"]
+}, {
+    "name": "Fortnite",
+    "platform": ["Android", "PlayStation 4", "Nintendo Switch", "Xbox One", "iOS", "Microsoft Windows", "Macintosh operating systems"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "July 25, 2017",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/fortnite",
+    "publisher": "Epic Games"
+}, {
+    "name": "Hearthstone",
+    "platform": [" Android", "iOS", "Microsoft Windows", "Macintosh operating systems"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "March 11, 2014",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/hearthstone",
+    "publisher": "Blizzard Entertainment"
+}, {
+    "name": "League of Legends",
+    "platform": ["Microsoft Windows", "Macintosh operating systems"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "October 27, 2009",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/lol",
+    "publisher": ["Tencent", "Garena", "Riot Games"]
+}, {
+    "name": "Minecraft",
+    "platform": ["platform"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "date",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/minecraft",
+    "publisher": "publisher"
+}, {
+    "name": "NBA 2K19",
+    "platform": ["PlayStation 4", "Xbox One", "Nintendo Switch", "Android", "iOS", "Microsoft Windows"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "September 7, 2018",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/nba2k19",
+    "publisher": ["2K Games", "2K Sports"]
+}, {
+    "name": "Paladins",
+    "platform": ["Nintendo Switch", "PlayStation 4", "Xbox One", "Microsoft Windows"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "September 15, 2016",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/paladins",
+    "publisher": "Hi-Rez Studios"
+}, {
+    "name": "Pokémon: Let's Go, Pikachu!",
+    "platform": ["Nintendo Switch"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": " November 16, 2018",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/pokemonLetsGoPikachu",
+    "publisher": ["The Pokémon Company", "Nintindo"]
+}, {
+    "name": "PlayerUnknown's Battlegrounds",
+    "platform": ["Andriod", "Microsoft Windows", "iOS", "Xbox One"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "March 23, 2017",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/pubg",
+    "publisher": ["Kakao Games", "Bluehole", "Lightspeed & Quantum", "Xbox Game Studios"]
+}, {
+    "name": "RuneScape",
+    "platform": ["Android", "Web browser", "Microsoft Windows", "iOS", "Java", "Linux", "Macintosh operating systems"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "January 4, 2001",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/gameNotListed",
+    "publisher": "Jagex"
+}, {
+    "name": "Realm Royale",
+    "platform": ["PlayStation 4", "Xbox One", "Microsoft Windows"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "date",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/gameNotListed",
+    "publisher": "Hi-Rez Studios"
+}, {
+    "name": "Ring of Elysium",
+    "platform": ["Microsoft Windows"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "September 19, 2018",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/gameNotListed",
+    "publisher": ["Garena", "Tencent Games", "Tencent"]
+}, {
+    "name": "Smite",
+    "platform": [" Nintendo Switch", "PlayStation 4", "Xbox One", "Microsoft Windows", "Macintosh operating systems", "macOS"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "March 25, 2014",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/gameNotListed",
+    "publisher": "Hi-Rez Studios"
+}, {
+    "name": "name of game",
+    "platform": ["platform"],
+    "genre": ["genre 1", "genre 2", "genre 3"],
+    "tags": ["tag 1", "tag 2"],
+    "releasedate": "date",
+    "releasedatesort": "YYYY-MM-DD",
+    "url": "/games/gameNotListed",
+    "publisher": "publisher"
+}]
