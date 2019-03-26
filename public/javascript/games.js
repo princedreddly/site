@@ -41,8 +41,8 @@ function sortTable(n) {
   let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("games-table-data");
   switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
+  dir = "asc"; //Set the sorting direction to ascending:
+  
   /*Make a loop that will continue until
   no switching has been done:*/
   while (switching) {
@@ -98,54 +98,6 @@ function sortTableDate(n) {
   
 }
 
-//OLD
-
-/*      Table     *\
-\*      Data      */
-/*
-$(document).ready(function () {
-
-
-  $.getJSON("../data/gamesList.json", function (data) {
-    var gamesListData = '';
-    $.each(data, function (key, value) {
-
-      //gamesListData += '<tr>';
-      gamesListData += '<tr class=\"' + value.name + '\"</td>';
-
-      gamesListData += '<td><a href=\"' + value.url + '\">' + value.name + '</a></td>';
-      //gamesListData += '<td>' + value.name + '</td>';
-
-      gamesListData += '<td>' + value.platform.join(", ") + '</td>';
-      gamesListData += '<td>' + value.genre.join(", ") + '</td>';
-      gamesListData += '<td>' + value.releasedate + '</td>';
-      gamesListData += '<td>' + value.publisher + '</td>';
-      gamesListData += '</tr>';
-    });
-    $('#games-table-data').append(gamesListData);
-    console.log('%ctable generated\n%c' + data.length + ' items added', "color:green; font-weight:500; font-size:24px", "color:blue; font-weight:500; font-size:24px");
-  });
-
-
-
-
-
-
-});
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-//New
 
 /*      Table     *\
 \*      Data      */
@@ -156,13 +108,8 @@ $(document).ready(function () {
   $.getJSON("../data/gamesList.json", function (data) {
     var gamesListData = '';
     $.each(data, function (key, value) {
-
-      //gamesListData += '<tr>';
       gamesListData += '<tr class=\"' + value.name + '\">';
-
       gamesListData += '<td><a href=\"' + value.url + '\">' + value.name + '</a></td>';
-      //gamesListData += '<td>' + value.name + '</td>';
-
       gamesListData += '<td>' + value.platform.join(", ") + '</td>';
       gamesListData += '<td>' + value.genre.join(", ") + '</td>';
       gamesListData += '<td>' + value.releasedate + '</td>';

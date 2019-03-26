@@ -1,45 +1,75 @@
 const express = require("express");
-const app = express();
-var jquery = require('jquery');
-var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
+let app = express();
+const jquery = require('jquery');
+const bodyParser = require('body-parser');
+const urlencodedParser = bodyParser.urlencoded({
+    extended: false
+});
 const ngrok = require('ngrok');
+const json2csv = require('json-2-csv');
 
-live = false // disable if using nodemon
 
-// Use ngrok
-if (live) {    
-    (async function() {
+
+
+//SECTION Server settings
+
+//Vars
+let sPort = 80; //server port
+
+live = !true; // disable ngrok if using nodemon
+
+// Use ngrok to host server
+if (live) {
+    (async function () {
         const url = await ngrok.connect();
-        date = new Date();
-        
-        console.clear();
-        console.log('Server started at ' + date.toUTCString());
-        console.log("http://localhost:4040/inspect/\n");
-        console.log("Click link to go to server =>      " + url + "/");
-        
+        date = new Date().toLocaleTimeString();
+
+        var twirlTimer = (function () {
+            var P = [".  ", ".. ", "...", "   "];
+            var x = 0;
+            return setInterval(function () {
+                process.stdout.write("\r" + 'Server running ' + P[x++] + '          ');
+                x &= 3;
+            }, 1000);
+        })();
+        // var twirlTimer = (function () {
+        //     var P = ["\\", "|", "/", "-"];
+        //     var x = 0;
+        //     return setInterval(function () {
+        //         process.stdout.write("\r" + 'Server running ' + P[x++] + '          ');
+        //         x &= 3;
+        //     }, 100);
+        // })();
+
+
+        ////console.log('\n\nServer started at ' + date);
+        console.log("\ninspect \t =>\t\t>>> http://localhost:4040/ <<<\n");
+        console.log("server    \t =>\t\t>>> " + url + "/ <<<\n\n\n");
+
     })();
 }
 
 
+// Start Server
+app.listen(sPort, () => {
+    date = new Date().toLocaleTimeString();
+    console.clear();
+    return console.log('Server ready locally on port ' + sPort + ' at ' + date + '\n\nlocal   \t =>\t\t>>> http://localhost:' + sPort + ' <<<');
 
-//use
+});
+
+//!SECTION 
+
+
+
+//static files
 app.use(express.static("public"));
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
 
 
 //default extentions
 app.set('view engine', 'ejs');
 app.set('css engine', 'scss');
 
-
-/* Post *\
-\*      */
-app.post('/games/postGame', urlencodedParser, (req, res) => {
-    console.log(req.body);
-
-});
 
 
 /* Routes *\
@@ -50,7 +80,15 @@ app.get('/', (req, res) => {
     res.render("home");
 });
 
+/*   Post   *\
+\* DBinsert */
 
+app.get('/idb', (req, res) => {
+    res.render("insertDatabase");
+});
+app.post('/', (req, res) => {
+
+});
 /* Routes *\
 \*  games */
 //games
@@ -101,13 +139,3 @@ app.get('*', (req, res) => {
 });
 
 /////////////////////////////////////////
-
-
-
-/* Start Server on port 80 *\
-\*                         */
-app.listen(80, () => {
-    date = new Date();
-    return console.log('Server ready at ' + date);
-    
-});
