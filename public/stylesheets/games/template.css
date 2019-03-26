@@ -1,0 +1,29 @@
+main {
+  display: -ms-grid;
+  display: grid;
+}
+
+.about {
+  color: black;
+}
+
+.info {
+  color: blue;
+}
+
+.media {
+  color: magenta;
+}
+
+.gameSpecific {
+  color: lime;
+}
+
+.guide {
+  color: red;
+}
+
+.comments {
+  color: yellow;
+}
+/*# sourceMappingURL=template.css.map */
