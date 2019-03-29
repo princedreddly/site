@@ -1,11 +1,12 @@
 const express = require('express');
+const app = express();
 const router = express.Router();
 const fs = require('fs');
 
 //SECTION Root
 
 //home page
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.render("home");
 });
 
